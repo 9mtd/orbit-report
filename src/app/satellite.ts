@@ -1,11 +1,27 @@
+// import { Component, OnInit } from '@angular/core';
+
+// @Component({
+//    selector: 'app-header',
+//    templateUrl: './app.component.html',
+//    styleUrls: ['./app.component.css']
+// })
+
 export class Satellite {
 
-constructor (name: string, type: string, launchDate: string, orbitType: string, operational: boolean)
+    name: string;
+    orbitType: string;
+    type: string;
+    operational: boolean;
+    launchDate: string;
 
-// name: string;
-// orbitType: string;
-// type: string;
-// operational: boolean;
-// launchDate: string;
+    constructor(name: string, type: string, launchDate: string, orbitType: string, operational: boolean) {
+
+    this.name = name;
+    this.orbitType = orbitType;
+    this.type = type;
+    this.operational = operational;
+    this.launchDate = launchDate;
+
+}
 
 }
