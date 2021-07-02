@@ -24,4 +24,8 @@ export class Satellite {
 
 }
 
+shouldShowWarning(): boolean {
+    return (this.type.trim().toLowerCase() === "space debris");
+}
+
 }
