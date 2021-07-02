@@ -2,13 +2,6 @@
 
 <h3>Orbit Report</h3>
 <table>
-   <!-- <tr class="header-row">
-      <th class="sortable">Name</th>
-      <th class="sortable">Type</th>
-      <th>Operational</th>
-      <th>Orbit Type</th>
-      <th>Launch Date</th>
-   </tr> -->
 
    <tr class="header-row">
     <th class="sortable" (click)="sort('name')">Name</th>
@@ -25,8 +18,7 @@
        <td>{{sourceList.orbitType}}</td>
        <td>{{sourceList.launchDate}}</td>
    </tr>
-   
-   <app-orbit-list [satellites]="displayList"></app-orbit-list>
+
 
 </table>
 
