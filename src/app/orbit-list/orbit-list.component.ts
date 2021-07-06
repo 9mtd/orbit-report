@@ -1,3 +1,4 @@
+//Part 3: Pass in Satellites to Orbit List Component
 import { Component, OnInit, Input } from '@angular/core';
 import { Satellite } from '../satellite';
 
@@ -16,6 +17,7 @@ export class OrbitListComponent implements OnInit {
   ngOnInit() {}
 
   
+//Part 7: Sorting
   sort(column: string): void {
     this.satellites.sort(function(name: Satellite, type: Satellite): number {
        if(name[column] < type[column]) {
@@ -30,4 +32,5 @@ export class OrbitListComponent implements OnInit {
 
 
 }
+
 

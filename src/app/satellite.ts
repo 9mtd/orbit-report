@@ -1,4 +1,5 @@
 
+//Part 1: Define and Create Satellites
 export class Satellite {
 
     name: string;
@@ -17,6 +18,8 @@ export class Satellite {
 
 }
 
+
+//Part 6: Highlight Space Debris
 shouldShowWarning(): boolean {
     return (this.type.trim().toLowerCase() === "space debris");
 }
